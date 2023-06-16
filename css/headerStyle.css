@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_bg {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.5s;
+  z-index: 9999;
+}
+
+.changeBar {
+  transform: translateY(-150%);
+}
+
+.none {
+  display: none;
+}
+
+header .nav_bar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(35px);
+          backdrop-filter: blur(35px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar {
+    display: block;
+    background: none;
+    padding: 0;
+  }
+}
+header .nav_bar a {
+  text-decoration: none;
+}
+header .nav_bar .logo {
+  width: 15%;
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(35px);
+            backdrop-filter: blur(35px);
+    align-items: center;
+  }
+  header .nav_bar .logo img {
+    width: 70%;
+  }
+}
+header .nav_bar .logo .btn_navbar {
+  position: relative;
+  z-index: 3;
+  width: 20%;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .logo .btn_navbar {
+    display: block;
+    width: 40%;
+    height: auto;
+    z-index: 3;
+  }
+}
+header .nav_bar .logo .btn_navbar .openBar {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+header .nav_bar .logo .btn_navbar .closeBar {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  header .nav_bar .logo .btn_navbar .closeBar {
+    z-index: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .logo .btn_navbar .closeBar {
+    color: black;
+  }
+  header .nav_bar .logo .btn_navbar .closeBar:hover {
+    color: red;
+  }
+}
+header .nav_bar .nav_content {
+  width: 85%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+header .nav_bar .nav_content ul {
+  list-style: none;
+}
+header .nav_bar .nav_content .nav-list {
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 375px) {
+  header .nav_bar .nav_content .nav-list {
+    width: 100%;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .nav_content .nav-list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  header .nav_bar .nav_content .nav-list {
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+    height: 45vh;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    top: 100%;
+    justify-content: flex-start;
+    background-color: white;
+    -webkit-backdrop-filter: blur(35px);
+            backdrop-filter: blur(35px);
+    transition: all 0.5s;
+  }
+}
+header .nav_bar .nav_content .nav-list .menu-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  justify-content: space-around;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 5%;
+}
+@media screen and (max-width: 375px) {
+  header .nav_bar .nav_content .nav-list .menu-list {
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .nav_content .nav-list .menu-list {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  header .nav_bar .nav_content .nav-list .menu-list li {
+    font-size: 16px;
+  }
+}
+header .nav_bar .nav_content .nav-list .menu-list li {
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+}
+header .nav_bar .nav_content .nav-list .menu-list li:hover a {
+  color: blue;
+}
+header .nav_bar .nav_content .nav-list .menu-list li a {
+  color: black;
+  transition: all 0.5s;
+}
+header .nav_bar .nav_content .nav-list .nav-icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  padding-left: 20%;
+}
+@media screen and (max-width: 768px) {
+  header .nav_bar .nav_content .nav-list .nav-icon {
+    width: 100%;
+    padding: 10px 20%;
+  }
+  header .nav_bar .nav_content .nav-list .nav-icon li {
+    padding: 0 5px;
+  }
+}
+header .nav_bar .nav_content .nav-list .nav-icon li {
+  padding: 0 10px;
+}

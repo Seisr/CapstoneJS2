@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main .product .product_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+main .product .product_item {
+  justify-content: center;
+  gap: 30px;
+}
+main .product .product_item .item {
+  border-radius: 10px;
+  transition: all 0.5s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px;
+}
+main .product .product_item .item:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+main .product .product_item .item .product_img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  main .product .product_item .item .product_img {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+  }
+}
+main .product .product_item .item .product_img img {
+  width: 100%;
+  border-radius: 20px;
+}
+main .product .product_item .item .product_info {
+  padding-left: 10px;
+}
+main .product .product_item .item .product_info .product_name {
+  font-size: 20px;
+}
+main .product .product_item .item .product_info .product_shortdescript {
+  color: #e5e5e5;
+  margin: 20px 0;
+}
+main .product .product_item .item .but {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+main .product .product_item .item .but a {
+  text-decoration: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: seagreen;
+  color: white;
+}
+main .product .product_item .item .but a:hover {
+  background-color: blue;
+}
+main .product .product_item .item .but .product_price {
+  font-size: 20px;
+  font-weight: 500;
+}
