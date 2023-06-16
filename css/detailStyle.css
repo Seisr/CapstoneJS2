@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  background-color: black;
+  padding: 10px 20px 0px 20px;
+  justify-content: space-between;
+  color: white;
+}
+
+.header li {
+  display: inline;
+}
+
+.navbar-brand {
+  margin: 0px 0px 0px 20px;
+}
+
+.btn.buynow {
+  background-color: #e1b067;
+}
+
+.relatedP {
+  display: flex;
+}
+
+.sprice {
+  border: 2px;
+  background-color: #cccccc;
+  padding: 5px 50px;
+}
+
+.btn.pm {
+  background: linear-gradient(180deg, #6181f3 0%, #7c97f5 99.48%);
+}
+
+#s {
+  background-color: #cccccc;
+}
+
+#asize {
+  color: #1ed90e;
+}
+
+#atc {
+  background: linear-gradient(
+    270deg,
+    rgba(62, 32, 248, 0.9) 5.14%,
+    #d017ee 89.71%
+  );
+}
